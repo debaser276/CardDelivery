@@ -21,7 +21,7 @@ import static com.codeborne.selenide.Condition.*;
 public class CardDeliveryTest {
 
     @BeforeAll
-    void setupAll() {
+    static void setupAll() {
         Configuration.headless = true;
     }
 
