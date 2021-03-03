@@ -1,6 +1,8 @@
 package ru.netology.domain;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -17,6 +19,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import static com.codeborne.selenide.Condition.*;
 
 public class CardDeliveryTest {
+
+    @BeforeAll
+    void setupAll() {
+        Configuration.headless = true;
+    }
 
     @BeforeEach
     void setup() {
