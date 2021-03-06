@@ -20,11 +20,6 @@ import static com.codeborne.selenide.Condition.*;
 
 public class CardDeliveryTest {
 
-    @BeforeAll
-    static void setupAll() {
-        Configuration.headless = true;
-    }
-
     @BeforeEach
     void setup() {
         open("http://localhost:9999");
